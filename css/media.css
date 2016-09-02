@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1200px) {
+    header .navbar .nav li a {
+        padding: 25px 5px;
+    }
+    header .navigation-slider {
+        top: 55%;
+    }
+    header .title h1 {
+        font-size: 100px;
+    }
+    header .title p {
+        font-size: 52px;
+    }
+    .meet-our .item-social {
+        text-align: center;
+    }
+    .meet-our .text-block , .meet-our .social-block{
+        float: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .wrapper header .navbar-header {
+        float: none;
+    }
+    header .navbar .nav li a {
+        padding: 25px 10px;
+    }
+    .wrapper header .navbar-right {
+        float: none !important;
+    }
+    .future-events .item-tabs .container-img:nth-child(1){
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .future-events .item-tabs .container-item-tex {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .future-events .item-tabs .container-img {
+        height: auto;
+    }
+    .gallery .container-img {
+        max-width: 390px;
+        overflow: hidden;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header .title h1 {
+        font-size: 62px;
+    }
+    header .title p {
+        font-size: 32px;
+    }
+    header .navigation-slider {
+        top: 40%;
+    }
+    .gallery .container-img {
+        text-align: center;
+    }
+    .future-events .item-tabs .container-img img {
+        width: 100%;
+    }
+    .future-events .item-tabs .container-img {
+        max-height: 380px;
+    }
+    .datepicker-here {
+        margin-bottom: 50px;
+    }
+    .today-events .datepicker-here .datepicker--nav {
+        border-top-right-radius: 20px;
+    }
+    .meet-our .item-trainers {
+        margin: 20px;
+    }
+    .meet-our .item-trainers img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .meet-our .item-social {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    header .title h1 {
+        font-size: 42px;
+    }
+    header .title p {
+        font-size: 22px;
+    }
+    .wrapper .custom-style {
+        font-size: 32px;
+    }
+    .social a img {
+        max-width: 52px;
+    }
+    .today-events .header-clock span {
+        font-size: 20px;
+    }
+    .future-events .nav-tabs>li {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .future-events .nav-tabs .circle {
+        display: none;
+    }
+    .future-events .item-tabs .container-img {
+        line-height: 220px;
+    }
+}
