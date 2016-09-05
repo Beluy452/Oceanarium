@@ -328,6 +328,10 @@ header .welcome-block p {
 .today-events .content-clock ul li span {
   font-weight: 700;
 }
+.today-events .datepicker-here .datepicker--cell.-current- {
+  color: #fff;
+  background: #4EB5E6;
+}
 .today-events .datepicker-here .datepicker {
   width: 100%;
   background: transparent;
@@ -475,6 +479,9 @@ header .welcome-block p {
 }
 .gallery .container-img:hover .hover-block {
   opacity: 1;
+}
+.gallery .container-img .hover-block img {
+  margin-bottom: 20px;
 }
 .gallery .container-img a {
   display: inline-block;

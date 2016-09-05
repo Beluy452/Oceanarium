@@ -32,7 +32,7 @@ $(document).ready(function () {
         });
     });
 
-    $('.nav li a[href^="#"]').on('click', function(event){
+    $('header .nav li a[href^="#"]').on('click', function(event){
         event.preventDefault();
         var anchor = this.hash;
         $('html, body').stop().animate({
