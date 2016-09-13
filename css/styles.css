@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
 .wrapper {
   background-color: #f2f2f2;
-  font-family: 'Roboto', sans-serif;
+  font: 100 18px "Roboto", sans-serif;
   overflow: hidden;
 }
 .wrapper img {
@@ -24,11 +24,8 @@
 .wrapper .custom-style {
   font-size: 48px;
   text-transform: uppercase;
-  font-weight: 100;
 }
 .wrapper .custom-style-p {
-  font-size: 18px;
-  font-weight: 100;
   line-height: 2;
   margin-bottom: 70px;
 }
@@ -53,43 +50,21 @@
   border-bottom-right-radius: 15px !important;
 }
 header {
-  background-image: url("../img/slide/slide-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 1170px;
-  background-position: 50%;
   text-align: center;
   color: #fff;
   position: relative;
+
 }
-header .navigation-slider {
+header .container {
   position: absolute;
-  top: 35%;
+  top:0;
   left: 0;
   right: 0;
 }
-header .navigation-slider i {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-header .navigation-slider i:hover {
-  border: 1px solid #00c0ff;
-  color: #00c0ff;
-}
-header .navigation-slider .prev-slide,
-header .navigation-slider .next-slide {
-  position: absolute;
-}
-header .navigation-slider .prev-slide {
-  left: 5%;
-}
-header .navigation-slider .next-slide {
-  right: 5%;
-}
+
 header .title {
-  margin-bottom: 235px;
+  margin-top: 245px;
+  margin-bottom: 50px;
 }
 header .title h1 {
   font-size: 133px;
@@ -105,7 +80,8 @@ header .navbar {
   background-color: #f2f2f2;
   margin-top: 40px;
   border-radius: 15px;
-  margin-bottom: 245px;
+  margin-bottom: 0;
+
 }
 header .navbar .navbar-toggle {
   margin-top: 15px;
@@ -114,19 +90,36 @@ header .navbar .nav li {
   text-align: center;
 }
 header .navbar .nav li a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 18px;
   color: #000;
   text-transform: uppercase;
   border-right: 2px solid transparent;
   border-left: 2px solid transparent;
   padding: 25px 20px;
   height: 70px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s ;
+  -ms-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
 }
 header .navbar .nav li a:hover {
   border-right: 2px solid #000;
   border-left: 2px solid #000;
+}
+header .fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  z-index: 2;
+  border-radius: 0;
+}
+header .navbar-default {
+  -webkit-transition: .5s;
+  -moz-transition: .5s ;
+  -ms-transition: .5s ;
+  -o-transition: .5s ;
+  transition: .5s ;
 }
 header .logo {
   margin-top: 15px;
@@ -149,7 +142,7 @@ header .welcome-block {
 header .welcome-block:after {
   top: 100%;
   left: 50%;
-  border: solid transparent;
+  border: solid;
   content: " ";
   height: 0;
   width: 0;
@@ -166,7 +159,6 @@ header .welcome-block h3 {
 }
 header .welcome-block p {
   padding-bottom: 60px;
-  font-weight: 100;
 }
 .we-work {
   text-align: center;
@@ -185,6 +177,7 @@ header .welcome-block p {
 .we-work .good-shark-block {
   background-image: url("../img/first-block/very.jpg");
   background-position: 50%;
+  background-size: cover;
   min-height: 360px;
   border-radius: 20px;
   margin-bottom: 70px;
@@ -198,9 +191,9 @@ header .welcome-block p {
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 100;
   border: 2px solid #fff;
   padding: 10px 15px;
+  display: inline-block;
 }
 .future-events {
   margin-bottom: 70px;
@@ -219,7 +212,6 @@ header .welcome-block p {
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
   font-size: 24px;
-  font-weight: 100;
   color: #000;
   padding: 0;
   text-align: center;
@@ -321,8 +313,6 @@ header .welcome-block p {
 .today-events .content-clock ul li {
   margin-bottom: 20px;
   list-style: disc;
-  font-size: 18px;
-  font-weight: 100;
   text-transform: uppercase;
 }
 .today-events .content-clock ul li span {
@@ -399,13 +389,12 @@ header .welcome-block p {
   float: left;
 }
 .meet-our .text-block h6 {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 5px;
 }
 .meet-our .text-block p {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 100;
   color: #0baec9;
 }
 .meet-our .social-block {
@@ -417,6 +406,11 @@ header .welcome-block p {
   background-color: #fff;
   color: #000;
   margin: 0 1px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s ;
+  -ms-transition: .3s ;
+  -o-transition: .3s ;
+  transition: .3s ;
 }
 .meet-our .social-block i:hover {
   color: #00e4ff;
@@ -438,7 +432,6 @@ header .welcome-block p {
 .contact-us .form-horizontal .form-group .btn-block {
   height: 75px;
   font-size: 30px;
-  font-weight: 100;
   border-radius: 0;
 }
 .contact-us .contact-block {
@@ -457,8 +450,6 @@ header .welcome-block p {
 }
 .contact-us .phone ul li,
 .contact-us .address ul li {
-  font-size: 18px;
-  font-weight: 100;
   color: #747474;
 }
 .contact-us .address ul {
@@ -473,9 +464,39 @@ header .welcome-block p {
 .gallery .col-md-3 {
   padding: 0;
 }
+.gallery .img-item-1 {
+  background: url("../img/galery/img-1.jpg")no-repeat;
+}
+.gallery .img-item-2 {
+  background: url("../img/galery/img-2.jpg")no-repeat;
+}
+.gallery .img-item-3 {
+  background: url("../img/galery/img-3.jpg")no-repeat;
+}
+.gallery .img-item-4 {
+  background: url("../img/galery/img-4.jpg")no-repeat;
+}
+.gallery .img-item-5 {
+  background: url("../img/galery/img-5.jpg")no-repeat;
+}
+.gallery .img-item-6 {
+  background: url("../img/galery/img-6.jpg")no-repeat;
+}
+.gallery .img-item-7 {
+  background: url("../img/galery/img-7.jpg")no-repeat;
+
+}
+.gallery .img-item-8 {
+  background: url("../img/galery/img-8.jpg")no-repeat;
+}
 .gallery .container-img {
+  background-position: 50%;
+  height: 385px;
+  width: 100%;
+  max-width: 385px;
   position: relative;
   line-height: 0;
+  background-size: cover;
 }
 .gallery .container-img:hover .hover-block {
   opacity: 1;
@@ -487,8 +508,7 @@ header .welcome-block p {
   display: inline-block;
 }
 .gallery .container-img img {
-  max-height: 385px;
-  height: 100%;
+
 }
 .gallery .container-img .hover-block {
   -webkit-transition: .5s;
@@ -516,7 +536,6 @@ header .welcome-block p {
   font-size: 38px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 100;
   font-family: cursive;
 }
 .wrapper footer {
@@ -526,7 +545,7 @@ footer {
   background-color: #22262e;
   text-align: center;
 }
-footer h6 {
+footer p {
   font-size: 24px;
   color: #fff;
 }
